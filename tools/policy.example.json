@@ -1,0 +1,1 @@
+{"blocked_tools":["delete_database","drop_table","send_sms"],"default":"allow","max_cost_usd":5.0,"rules":[{"allowed_data":["public","internal"],"require_approval":true,"tool":"write_file"},{"allowed_data":["public","internal"],"max_cost_usd":1.0,"tool":"send_email"},{"allowed_data":["public","internal","confidential"],"tool":"read_file"}]}
