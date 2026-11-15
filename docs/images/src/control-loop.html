@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The governance loop</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1000px; height: 560px; overflow: hidden;
+    background: #f4f7fa; color: #1e293b;
+    font-family: Arial, Helvetica, "DejaVu Sans", sans-serif;
+    padding: 34px 44px;
+  }
+  h1 { font-size: 32px; color: #0f2a43; line-height: 1.15; margin-bottom: 6px; }
+  h1 span { color: #0d7d6e; }
+  .sub { font-size: 16px; color: #475569; margin-bottom: 24px; }
+  .row { display: flex; align-items: stretch; }
+  .box {
+    width: 272px; flex: none; background: #ffffff; border: 1px solid #dbe4ec; border-top: 6px solid #0d7d6e;
+    border-radius: 12px; padding: 18px 16px 16px; text-align: center;
+  }
+  .box.dark { background: #0f2a43; border-color: #0f2a43; }
+  .box.dark h2 { color: #ffffff; }
+  .box.dark p { color: #cbd5e1; }
+  .box .n {
+    width: 34px; height: 34px; border-radius: 50%; background: #0d7d6e; color: #fff;
+    font-size: 17px; font-weight: bold; display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 10px;
+  }
+  .box h2 { font-size: 19px; color: #0f2a43; margin-bottom: 6px; }
+  .box p { font-size: 14px; line-height: 1.45; color: #475569; }
+  .harrow {
+    width: 24px; flex: none; display: flex; align-items: center; justify-content: center;
+    font-size: 24px; font-weight: bold; color: #0d7d6e;
+  }
+  .varrow {
+    width: 48px; flex: none; display: flex; align-items: flex-start; justify-content: center;
+    font-size: 26px; font-weight: bold; color: #0d7d6e; padding-top: 8px;
+  }
+  .mid { display: flex; height: 64px; }
+  .mid .upcol { width: 272px; flex: none; display: flex; align-items: flex-start; justify-content: center; font-size: 26px; font-weight: bold; color: #0d7d6e; padding-top: 4px; }
+  .mid .center { flex: 1; display: flex; align-items: center; justify-content: center; }
+  .mid .center p { font-size: 16px; color: #64748b; text-align: center; line-height: 1.5; }
+  .mid .center b { color: #0f2a43; }
+  .mid .spacer { width: 48px; flex: none; }
+  .gap { flex: none; }
+  .foot { margin-top: 22px; font-size: 14px; color: #64748b; text-align: center; }
+</style>
+</head>
+<body>
+  <h1>The Governance <span>Loop</span></h1>
+  <p class="sub">Governance is not a document you write once. It is a loop you run every week.</p>
+  <div class="row">
+    <div class="box dark"><div class="n">1</div><h2>Inventory</h2><p>List every model, agent, tool, and data source.</p></div>
+    <div class="harrow">&#8594;</div>
+    <div class="box"><div class="n">2</div><h2>Assess risk</h2><p>Score each item in the risk register.</p></div>
+    <div class="harrow">&#8594;</div>
+    <div class="box"><div class="n">3</div><h2>Set policy</h2><p>Write the rules: what is allowed, what needs approval.</p></div>
+    <div class="varrow">&#8595;</div>
+  </div>
+  <div class="mid">
+    <div class="upcol">&#8593;</div>
+    <div class="center"><p><b>Small steady fixes</b> beat a big policy<br>document nobody reads.</p></div>
+    <div class="spacer"></div>
+  </div>
+  <div class="row">
+    <div class="gap" style="width:272px"></div>
+    <div class="gap" style="width:24px"></div>
+    <div class="box"><div class="n">5</div><h2>Review weekly</h2><p>Check logs, costs, and the top 3 risks. Fix the biggest waste first.</p></div>
+    <div class="harrow">&#8592;</div>
+    <div class="box dark"><div class="n">4</div><h2>Log actions</h2><p>Record what each agent did, so you can check it later.</p></div>
+    <div class="gap" style="width:48px"></div>
+  </div>
+  <p class="foot">One loop, every week. Start at step 1, and the loop brings you back to it.</p>
+</body>
+</html>

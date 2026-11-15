@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>30-minute quick start</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1000px; height: 730px; overflow: hidden;
+    background: #f4f7fa; color: #1e293b;
+    font-family: Arial, Helvetica, "DejaVu Sans", sans-serif;
+    padding: 34px 44px;
+  }
+  .head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 6px; }
+  h1 { font-size: 32px; color: #0f2a43; line-height: 1.15; }
+  h1 span { color: #0d7d6e; }
+  .badge {
+    background: #0d7d6e; color: #fff; font-size: 20px; font-weight: bold;
+    border-radius: 12px; padding: 12px 18px; text-align: center; line-height: 1.2; flex: none;
+  }
+  .badge small { display: block; font-size: 12px; font-weight: normal; letter-spacing: 1px; }
+  .sub { font-size: 16px; color: #475569; margin-bottom: 22px; }
+  .cols { display: flex; gap: 18px; }
+  .col { flex: 1; display: flex; flex-direction: column; gap: 12px; }
+  .step {
+    background: #ffffff; border: 1px solid #dbe4ec; border-radius: 12px;
+    padding: 14px 16px; display: flex; gap: 14px; align-items: flex-start; flex: 1;
+  }
+  .step .n {
+    width: 38px; height: 38px; border-radius: 50%; flex: none;
+    background: #0f2a43; color: #fff; font-size: 19px; font-weight: bold;
+    display: flex; align-items: center; justify-content: center; margin-top: 2px;
+  }
+  .step.teal .n { background: #0d7d6e; }
+  .step h2 { font-size: 17px; color: #0f2a43; line-height: 1.3; margin-bottom: 3px; }
+  .step p { font-size: 14px; line-height: 1.4; color: #475569; }
+  .step code { font-size: 13px; color: #0d7d6e; background: #eef6f4; padding: 1px 5px; border-radius: 4px; }
+  .foot { margin-top: 20px; font-size: 14px; color: #64748b; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="head">
+    <h1>30-Minute <span>Quick Start</span></h1>
+    <div class="badge">30<small>MINUTES</small></div>
+  </div>
+  <p class="sub">Ten small steps. One owner, one inventory, one weekly review.</p>
+  <div class="cols">
+    <div class="col">
+      <div class="step teal"><div class="n">1</div><div><h2>Pick one owner</h2><p>Read the five principles and name one person for AI governance.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h2>List what you have</h2><p>Fill in the AI inventory: every model, agent, tool, and data source.</p></div></div>
+      <div class="step teal"><div class="n">3</div><div><h2>Run the demo</h2><p>See the tools work end to end: <code>python tools/demo.py</code></p></div></div>
+      <div class="step"><div class="n">4</div><div><h2>Price one real task</h2><p>Use the cost estimator and write the result next to that agent.</p></div></div>
+      <div class="step teal"><div class="n">5</div><div><h2>Add your top 3 risks</h2><p>Open the risk register and give each risk an owner and a fix.</p></div></div>
+    </div>
+    <div class="col">
+      <div class="step"><div class="n">6</div><div><h2>Share the policy</h2><p>Edit the acceptable-use policy to fit your team, then share it.</p></div></div>
+      <div class="step teal"><div class="n">7</div><div><h2>Score your models</h2><p>Use the rubric and record the winner in config, not in code.</p></div></div>
+      <div class="step"><div class="n">8</div><div><h2>Check your top agent</h2><p>Walk the runtime checklist and fix the first gap you find.</p></div></div>
+      <div class="step teal"><div class="n">9</div><div><h2>Check the logs</h2><p>Confirm the action logger records every agent action.</p></div></div>
+      <div class="step"><div class="n">10</div><div><h2>Test the policy</h2><p>Run the policy checker on a sample action, then set a weekly review.</p></div></div>
+    </div>
+  </div>
+  <p class="foot">Done in 30 minutes. Repeat the review every week.</p>
+</body>
+</html>

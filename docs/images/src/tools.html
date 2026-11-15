@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tools at a glance</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1000px; height: 500px; overflow: hidden;
+    background: #f4f7fa; color: #1e293b;
+    font-family: Arial, Helvetica, "DejaVu Sans", sans-serif;
+    padding: 34px 44px;
+  }
+  h1 { font-size: 32px; color: #0f2a43; line-height: 1.15; margin-bottom: 6px; }
+  h1 span { color: #0d7d6e; }
+  .sub { font-size: 16px; color: #475569; margin-bottom: 22px; }
+  .flow { display: flex; align-items: stretch; gap: 0; margin-bottom: 24px; }
+  .node {
+    flex: 1; background: #0f2a43; color: #fff; border-radius: 10px;
+    padding: 13px 10px; text-align: center;
+  }
+  .node.teal { background: #0d7d6e; }
+  .node .t { font-size: 15px; font-weight: bold; line-height: 1.25; }
+  .node .d { font-size: 12px; color: #cbd5e1; margin-top: 3px; line-height: 1.3; }
+  .node.teal .d { color: #d1fae5; }
+  .arrow {
+    width: 34px; flex: none; display: flex; align-items: center; justify-content: center;
+    font-size: 22px; font-weight: bold; color: #0d7d6e;
+  }
+  .cards { display: flex; gap: 18px; }
+  .card {
+    flex: 1; background: #ffffff; border: 1px solid #dbe4ec; border-top: 6px solid #0d7d6e;
+    border-radius: 12px; padding: 18px 18px 16px;
+  }
+  .card .tag { font-size: 12px; font-weight: bold; letter-spacing: 1px; color: #0d7d6e; margin-bottom: 6px; }
+  .card h2 { font-size: 21px; color: #0f2a43; margin-bottom: 10px; }
+  .io { font-size: 14.5px; line-height: 1.5; color: #475569; }
+  .io b { color: #0f2a43; }
+  .io + .io { margin-top: 8px; border-top: 1px dashed #dbe4ec; padding-top: 8px; }
+  .foot { margin-top: 20px; font-size: 14px; color: #64748b; text-align: center; }
+  .foot b { color: #0d7d6e; }
+</style>
+</head>
+<body>
+  <h1>Three Small <span>Tools</span></h1>
+  <p class="sub">Start with what you have, price it, record what agents do, and gate the risky actions.</p>
+  <div class="flow">
+    <div class="node"><div class="t">Inventory</div><div class="d">List what you have</div></div>
+    <div class="arrow">&#8594;</div>
+    <div class="node teal"><div class="t">Cost estimator</div><div class="d">Price each call</div></div>
+    <div class="arrow">&#8594;</div>
+    <div class="node"><div class="t">Action logger</div><div class="d">Record every action</div></div>
+    <div class="arrow">&#8594;</div>
+    <div class="node teal"><div class="t">Policy checker</div><div class="d">Gate risky actions</div></div>
+    <div class="arrow">&#8594;</div>
+    <div class="node"><div class="t">Weekly review</div><div class="d">Close the loop</div></div>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="tag">TOOL 1 &middot; AGOV.COST</div>
+      <h2>Cost estimator</h2>
+      <p class="io"><b>In:</b> model, input and output tokens</p>
+      <p class="io"><b>Out:</b> price for the call, plus a budget warning</p>
+    </div>
+    <div class="card">
+      <div class="tag">TOOL 2 &middot; AGOV.LOGGER</div>
+      <h2>Action logger</h2>
+      <p class="io"><b>In:</b> each agent action, who asked, what changed</p>
+      <p class="io"><b>Out:</b> a JSONL audit log you can query and summarize</p>
+    </div>
+    <div class="card">
+      <div class="tag">TOOL 3 &middot; AGOV.POLICY</div>
+      <h2>Policy checker</h2>
+      <p class="io"><b>In:</b> an action and a JSON policy file</p>
+      <p class="io"><b>Out:</b> allow, needs approval, or deny, with a reason</p>
+    </div>
+  </div>
+  <p class="foot">Standard library only. <b>No setup, no accounts, no network.</b> Run them from <b>tools/</b> today.</p>
+</body>
+</html>
