@@ -4,7 +4,7 @@ A small, practical starter kit for teams that want to use AI agents safely witho
 
 ## Watch the overview
 
-![AI Governance Starter Kit overview video, 2 minutes 33 seconds](https://github.com/user-attachments/assets/429d09bc-f04b-460b-8a60-e8e4a4a0ee6c)
+![AI Governance Starter Kit overview video, 2 minutes 33 seconds](https://github.com/user-attachments/assets/9823f911-a3ce-49e7-8a0b-2395e6238c23)
 
 The 2-minute overview (2:33) walks through the framework, the 30-minute quick start, the templates, and the three tools.
 
