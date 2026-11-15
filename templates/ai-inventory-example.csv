@@ -1,0 +1,7 @@
+name,type,owner,purpose,provider,data_sensitivity,cost_center,monthly_cost_usd,status,last_reviewed
+Helpdesk Helper,agent,priya@example.test,Answer common support questions from the help center,Acme Model Co,internal,support,180.00,active,2026-10-01
+Review Buddy,agent,omar@example.test,Suggest improvements on pull requests before human review,Acme Model Co,internal,engineering,95.50,active,2026-10-15
+Lead Scout,agent,ana@example.test,Research public information about prospective customers,Acme Model Co,public,growth,60.00,trial,2026-11-01
+Small Embedder,model,omar@example.test,Turn support articles into searchable vectors,Open Weights Lab,internal,engineering,25.00,active,2026-09-20
+Docs Bridge,mcp_server,priya@example.test,Let agents read approved help center pages,Self hosted,internal,support,0.00,active,2026-10-28
+Support Tickets 2024,dataset,ana@example.test,Anonymized past tickets used to test the chatbot,Internal,confidential,support,0.00,active,2026-09-05

@@ -1,0 +1,7 @@
+id,risk,category,likelihood,impact,score,owner,mitigation,status,due_date
+R-01,Agent sends customer email addresses to an external model,privacy,3,5,15,priya@example.test,Block personal data fields before the prompt is sent and log every call,mitigating,2026-12-01
+R-02,Monthly model spend doubles without warning,cost,4,3,12,omar@example.test,Set a monthly budget alert at 80 percent and a hard cap per cost center,mitigating,2026-11-30
+R-03,Agent edits a production database without approval,security,2,5,10,ana@example.test,Require human approval for every write and limit the agent to read only tools by default,open,2026-11-20
+R-04,Model gives wrong answers about pricing and refunds,quality,4,3,12,priya@example.test,Test answers against a fixed sample each week and route low confidence replies to a human,mitigating,2026-12-15
+R-05,Customer data kept in a dataset past its agreed retention date,compliance,2,4,8,ana@example.test,Add a retention date to every dataset row and review expired entries monthly,open,2027-01-15
+R-06,Team keeps using a retired model because old prompts still point at it,quality,3,2,6,omar@example.test,Keep one list of approved models and remove retired ones from every config,accepted,2026-11-25
