@@ -2,6 +2,10 @@
 
 A small, practical starter kit for teams that want to use AI agents safely without slowing down. It gives you checklists, simple templates, and tiny tools you can run today. No enterprise platform is required.
 
+## Watch the overview
+
+[Watch the 2-minute overview video](https://drive.google.com/file/d/1NEH425pw0EiqjHTfLwN7LzgW5LCt1UIH/view?usp=drivesdk) (2:33). It walks through the framework, the 30-minute quick start, the templates, and the three tools.
+
 ## Who it is for
 
 This kit is for teams of 2 to 20 people: startups, small product teams, and anyone building or using AI agents. It assumes you have a few models, a few agents, and a few data sources, and you want to keep track of them before they grow out of control.
