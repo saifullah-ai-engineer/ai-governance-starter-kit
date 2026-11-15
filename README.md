@@ -8,6 +8,10 @@ This kit is for teams of 2 to 20 people: startups, small product teams, and anyo
 
 ## The framework: cost, choice, control
 
+![Diagram of the AI Governance Starter Kit framework: three pillars Cost, Choice, Control, and the five principles beneath them](docs/images/framework.png)
+
+*Designed in HTML and CSS.*
+
 Good AI governance comes down to three questions. Keep them in balance. If you only watch cost, you may pick a weak model. If you only chase new models, your bill and your risk grow. If you only add controls, your team stops shipping.
 
 ### Cost
@@ -24,6 +28,10 @@ Know what AI you have, who can use it, and what it is allowed to do. List every 
 
 ## 30-minute quick start
 
+![Diagram of the 10-step 30-minute quick start](docs/images/quickstart.png)
+
+*Designed in HTML and CSS.*
+
 1. Read [docs/01-principles.md](docs/01-principles.md) and pick one owner for AI governance in your team.
 2. List what you have in [templates/ai-inventory.csv](templates/ai-inventory.csv): every model, agent, tool, and data source, plus who owns each one.
 3. Run the demo to see the tools work: `python tools/demo.py`
@@ -34,6 +42,18 @@ Know what AI you have, who can use it, and what it is allowed to do. List every 
 8. Walk through [templates/agent-runtime-checklist.md](templates/agent-runtime-checklist.md) for your most used agent and fix the first gap you find.
 9. Check that your agent logs each action with the action logger in [tools/agov/](tools/agov/).
 10. Run the policy checker in [tools/agov/](tools/agov/) on a sample agent action, then set a weekly 30-minute review in your calendar.
+
+![Diagram of the weekly governance loop: inventory, assess risk, set policy, log actions, review weekly](docs/images/control-loop.png)
+
+*Designed in HTML and CSS.*
+
+## Tools at a glance
+
+![Diagram of the three tools: cost estimator, action logger, and policy checker, and how they fit together](docs/images/tools.png)
+
+*Designed in HTML and CSS.*
+
+The three tools live in [tools/agov/](tools/agov/) and are covered in [tools/README.md](tools/README.md). Start with the inventory, price the work, log what agents do, and let the policy checker gate the risky actions.
 
 ## Repo map
 
